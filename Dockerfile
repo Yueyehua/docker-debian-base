@@ -13,7 +13,7 @@ RUN \
     htop mtr traceroute net-tools tar less vim nano tree curl git snmp nmap \
     apt-transport-https ca-certificates apt-utils software-properties-common \
     libssl-dev libyaml-dev libreadline6-dev zlib1g-dev libncurses5-dev \
-    libffi-dev libgdbm3 libgdbm-dev;
+    libffi-dev libgdbm3 libgdbm-dev bash-completion;
 
 # Clean all
 RUN \
