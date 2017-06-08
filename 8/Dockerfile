@@ -1,8 +1,6 @@
-FROM debian:9
+FROM debian:jessie
 MAINTAINER Richard Delaplace "rdelaplace@yueyehua.net"
 LABEL version="1.0.0"
-
-ENV DEBIAN_FRONTEND=noninteractive
 
 # Apt update and upgrade
 RUN \
@@ -22,4 +20,4 @@ RUN \
   apt-get -qq clean autoclean;
 
 VOLUME ["/sys/fs/cgroup"]
-CMD  ["/bin/bash"]
+CMD  ["/lib/systemd/systemd"]
