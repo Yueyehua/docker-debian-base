@@ -15,11 +15,12 @@ RUN \
     htop mtr traceroute net-tools tar less vim nano tree curl git snmp nmap \
     apt-transport-https ca-certificates apt-utils software-properties-common \
     libssl-dev libyaml-dev libreadline6-dev zlib1g-dev libncurses5-dev \
-    libffi-dev libgdbm3 libgdbm-dev bash-completion shellcheck sudo systemd;
+    libffi-dev libgdbm3 libgdbm-dev bash-completion shellcheck sudo systemd \
+    systemd-sysv;
 
 # Clean all
 RUN \
   apt-get -qq clean autoclean;
 
 VOLUME ["/sys/fs/cgroup"]
-CMD  ["/lib/systemd/systemd"]
+CMD  ["/bin/bash"]
