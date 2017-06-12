@@ -16,7 +16,7 @@ RUN \
     apt-transport-https ca-certificates apt-utils software-properties-common \
     libssl-dev libyaml-dev libreadline6-dev zlib1g-dev libncurses5-dev \
     libffi-dev libgdbm3 libgdbm-dev bash-completion shellcheck sudo systemd \
-    systemd-sysv;
+    systemd-sysv locales;
 
 # Clean all
 RUN \
